@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Info Card Experiments</title>
+        <meta name="description" content="Info Card Experiments">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.css">
+
+        <style>
+        img { display: block; }
+        .cards {
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-top-left-radius: 10px;
+            flex: 0 1 auto;
+            max-width: 510px;
+            min-width: 375px;
+            overflow: hidden;
+            padding: 8px 5px;
+            position: relative;
+        }
+        .card-headline { 
+            margin-top: 0;
+        }
+        .card-body {
+            margin: 0;
+        }
+        .card-image {
+            float: left;
+            margin-right: 8px;
+            min-width: 140px;
+            width: 33%;
+        }
+        .card-author {
+            float: right;
+            margin-bottom: -8px;
+            margin-right: -5px;
+            max-width: 100px;
+            min-width: 70px;
+            width: 25%;
+
+            shape-outside: polygon(100% 0, 100% 100%, 0 100%);
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Story Cards</h1>
+        
+        <div class="cards">
+
+            <div class="card card_story card_medium">
+                <p class="card-headline"><strong><a href="http://www.cbc.ca/news/world/ruble-s-dramatic-drop-inflicts-economic-pain-in-russia-1.2931140">Ruble's dramatic drop inflicts economic pain in Russia</a></strong></p>
+                <p class="card-body">
+                    <img class="card-image" src="http://i.cbc.ca/1.2931154.1422297028!/fileImage/httpImage/image.jpg_gen/derivatives/16x9tight_140/svetlana-onikeh.jpg" />
+                    <img class="card-author" src="img/SusanOrmiston.png" alt="By Susan Ormiston, CBC News" width="100%" />
+                    The Russian ruble has lost nearly half its value as sanctions bite and oil revenue drops
+
+                    <!--Svetlana Onike, a 36-year-old mother of three, lets out a long sigh, her shoulders droop, she’s near tears. Sitting In her tiny one-bedroom apartment an hour outside Moscow, Svetlana explains how her monthly mortgage costs have suddenly doubled to $2,100 US a month — more than the entire monthly salary of most Russians.-->
+                </p>
+            </div>
+            
+
+            <div class="card card_story card_medium">
+                <p class="card-headline"><strong><a href="http://www.cbc.ca/news/world/a-state-of-the-union-address-the-president-is-unlikely-to-give-1.2918934">A state of the union address the president is unlikely to give</a></strong></p>
+                <p class="card-body">
+                    <img class="card-image" src="http://i.cbc.ca/1.1068067.1378613087!/httpImage/image.jpg_gen/derivatives/16x9tight_140/li-debt-talks-620-75848.jpg" />
+                    <img class="card-author" src="img/NeilMacdonald.png" alt="By Neil Macdonald, CBC News" width="100%" />
+                    A lame-duck president, a Republican-controlled Congress: What's to discuss, asks Neil Macdonald
+
+                    <!--Svetlana Onike, a 36-year-old mother of three, lets out a long sigh, her shoulders droop, she’s near tears. Sitting In her tiny one-bedroom apartment an hour outside Moscow, Svetlana explains how her monthly mortgage costs have suddenly doubled to $2,100 US a month — more than the entire monthly salary of most Russians.-->
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
